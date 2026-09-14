@@ -3,10 +3,13 @@ import SiteChrome from "@/components/SiteChrome";
 import PageHero from "@/components/PageHero";
 import CtaBand from "@/components/CtaBand";
 import JsonLd from "@/components/JsonLd";
-import { machines, site } from "@/lib/site";
+import { assetPath, machines, site } from "@/lib/site";
 
 export const metadata = {
-  title: { absolute: "Machinery We Support | ABI, Bauer, Liebherr, SANY | ZA Automation Dubai" },
+  title: {
+    absolute:
+      "Machinery We Support | ABI, Bauer, Liebherr, SANY | ZA Automation Dubai",
+  },
   description:
     "ZA Automation supports ABI sheet pile machines, rotary drilling rigs, Bauer systems, Liebherr equipment, vibro hammers and foundation plant with PLC, HMI, CANbus and electrical automation across the UAE.",
   alternates: { canonical: "/machinery" },
@@ -32,24 +35,22 @@ export default function MachineryPage() {
     <SiteChrome solid>
       <JsonLd data={schema} />
       <PageHero
-        image="/assets/images/abi-mobilram.jpg"
+        image={assetPath("/assets/images/abi-mobilram.jpg")}
         alt="Bauer foundation machinery supported by ZA Automation"
         eyebrow="Platforms"
         title="Machinery we support across UAE foundation sites"
         lead="Hands-on automation experience with the heavy plant behind piling, drilling and foundation works."
-        crumbs={[
-          { href: "/", label: "Home" },
-          { label: "Machinery" },
-        ]}
+        crumbs={[{ href: "/", label: "Home" }, { label: "Machinery" }]}
       />
 
       <section className="section section--sand">
         <div className="container">
           <div className="brand-pills reveal">
             {site.brands.map((b) => {
-              const match = machines.find((m) =>
-                m.brand.toLowerCase().includes(b.toLowerCase()) ||
-                m.title.toLowerCase().includes(b.toLowerCase())
+              const match = machines.find(
+                (m) =>
+                  m.brand.toLowerCase().includes(b.toLowerCase()) ||
+                  m.title.toLowerCase().includes(b.toLowerCase()),
               );
               const href = match
                 ? `#${match.id}`
@@ -84,10 +85,14 @@ export default function MachineryPage() {
                       <Link href="/services#plc">PLC / HMI support</Link>
                     </li>
                     <li>
-                      <Link href="/services#canbus">CANbus &amp; electrical diagnostics</Link>
+                      <Link href="/services#canbus">
+                        CANbus &amp; electrical diagnostics
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/services#lmi">Sensors, LMI &amp; safety systems</Link>
+                      <Link href="/services#lmi">
+                        Sensors, LMI &amp; safety systems
+                      </Link>
                     </li>
                     <li>
                       <Link href="/contact">On-site UAE field service</Link>

@@ -6,9 +6,10 @@ const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   outputFileTracingRoot: projectRoot,
-  images: {
-    unoptimized: false,
-  },
+  output: "export",
+  basePath: "/zaautomation.com",
+  trailingSlash: true,
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
