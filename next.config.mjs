@@ -7,7 +7,6 @@ const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 const nextConfig = {
   outputFileTracingRoot: projectRoot,
   output: "export",
-  basePath: "/zaautomation.com",
   trailingSlash: true,
   images: { unoptimized: true },
 };

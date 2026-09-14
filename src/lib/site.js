@@ -1,4 +1,4 @@
-export const basePath = "/zaautomation.com";
+export const basePath = "";
 
 export function assetPath(path) {
   return `${basePath}${path}`;
