@@ -5,6 +5,7 @@ import RevealInit from "@/components/RevealInit";
 import HashScroll from "@/components/HashScroll";
 import JsonLd from "@/components/JsonLd";
 import { localBusinessJsonLd, site } from "@/lib/site";
+import { AuthProvider } from "@/components/AuthProvider";
 
 export const metadata = {
   metadataBase: new URL(site.url),
@@ -50,12 +51,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <JsonLd data={localBusinessJsonLd()} />
-        {children}
-        <WhatsAppFloat />
+        <AuthProvider>
+          <JsonLd data={localBusinessJsonLd()} />
+          {children}
+          <WhatsAppFloat />
         <ChatBot />
         <RevealInit />
-        <HashScroll />
+          <HashScroll />
+        </AuthProvider>
       </body>
     </html>
   );
