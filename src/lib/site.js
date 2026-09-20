@@ -7,7 +7,7 @@ export function assetPath(path) {
 export const site = {
   name: "ZA Automation Technical Services LLC",
   shortName: "ZA Automation",
-  url: "https://umengineer-ai.github.io/zaautomation.com",
+  url: "https://zaautomation.com",
   email: "zaki@zaautomation.com",
   phoneDisplay: "+971 55 962 6398",
   phoneE164: "+971559626398",
