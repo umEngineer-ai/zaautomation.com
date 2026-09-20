@@ -35,7 +35,7 @@ export default function ContactForm({ showService = false }) {
   };
 
   return (
-    <form className="contact__form reveal reveal-d2" onSubmit={onSubmit}>
+    <form data-lead-form="api-v2" className="contact__form reveal reveal-d2" onSubmit={onSubmit}>
       <div className="form-row">
         <label><span>Full name</span><input type="text" name="name" placeholder="Your name" required value={form.name} onChange={onChange}/></label>
         <label><span>Company</span><input type="text" name="company" placeholder="Company name" value={form.company} onChange={onChange}/></label>
