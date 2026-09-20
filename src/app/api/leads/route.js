@@ -1,12 +1,7 @@
 import { NextResponse } from "next/server";
 
-const SUPABASE_URL =
-  process.env.NEXT_PUBLIC_SUPABASE_URL ||
-  "https://mpikyxwykvsioyicnbuu.supabase.co";
-
-const SUPABASE_KEY =
-  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
-  "sb_publishable_KhNnVjP3FpweOrMIOnTlJA_h5Lc5yli";
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const NOTIFICATION_EMAIL =
@@ -14,7 +9,7 @@ const NOTIFICATION_EMAIL =
 const FROM_EMAIL =
   process.env.RESEND_FROM_EMAIL || "ZA Automation <noreply@zaautomation.com>";
 
-const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(request) {
   try {
@@ -40,6 +35,14 @@ export async function POST(request) {
       return NextResponse.json(
         { error: "Please enter a valid email address." },
         { status: 400 }
+      );
+    }
+
+    if (!SUPABASE_URL || !SUPABASE_KEY) {
+      console.error("Supabase lead service is not configured.");
+      return NextResponse.json(
+        { error: "Lead service is not configured yet." },
+        { status: 500 }
       );
     }
 
@@ -74,7 +77,6 @@ export async function POST(request) {
       );
     }
 
-    // Email notification is optional: the lead is already safely stored in Supabase.
     if (RESEND_API_KEY) {
       try {
         const mail = await fetch("https://api.resend.com/emails", {
@@ -98,7 +100,7 @@ export async function POST(request) {
               "",
               "Message:",
               message,
-            ].join("\\n"),
+            ].join("\n"),
           }),
         });
 
