@@ -14,7 +14,7 @@ export const metadata = {
     template: "%s | ZA Automation Dubai",
   },
   description:
-    "ZA Automation Technical Services LLC in Dubai — PLC programming, HMI development, CANbus diagnostics, sensor calibration and electrical fault finding for foundation fleets across the UAE.",
+    "Zaki Abbas Technical Services LLC in Dubai — PLC programming, HMI development, CANbus diagnostics, sensor calibration and electrical fault finding for foundation fleets across the UAE.",
   keywords: [
     "ZA Automation Dubai",
     "piling machinery automation UAE",
