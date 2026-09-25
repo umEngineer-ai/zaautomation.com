@@ -11,7 +11,7 @@ export const metadata = {
       "About ZA Automation Dubai | Foundation Machinery Automation Specialists",
   },
   description:
-    "Learn about ZA Automation Technical Services LLC in Al Barah, Dubai — specialists in PLC, HMI, CANbus and electrical automation for piling and foundation machinery across the UAE.",
+    "Learn about Zaki Abbas Technical Services LLC in Al Barah, Dubai — specialists in PLC, HMI, CANbus and electrical automation for piling and foundation machinery across the UAE.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About ZA Automation Dubai",
@@ -25,7 +25,7 @@ export default function AboutPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "About ZA Automation Technical Services LLC",
+    name: "About Zaki Abbas Technical Services LLC",
     url: `${site.url}/about`,
     mainEntity: {
       "@type": "LocalBusiness",
@@ -50,7 +50,7 @@ export default function AboutPage() {
         alt="ZA Automation field work on rotary drilling equipment"
         eyebrow="About the company"
         title="Dubai specialists keeping foundation fleets online"
-        lead="ZA Automation Technical Services LLC delivers disciplined automation, diagnostics and control solutions for piling and foundation machinery across the UAE."
+        lead="Zaki Abbas Technical Services LLC delivers disciplined automation, diagnostics and control solutions for piling and foundation machinery across the UAE."
         crumbs={[{ href: "/", label: "Home" }, { label: "About" }]}
       />
 
