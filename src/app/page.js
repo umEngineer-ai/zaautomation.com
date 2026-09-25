@@ -12,7 +12,7 @@ export const metadata = {
       "ZA Automation Dubai | PLC, HMI & CANbus for Piling & Foundation Machinery",
   },
   description:
-    "ZA Automation Technical Services LLC in Dubai — PLC programming, HMI development, CANbus diagnostics, sensor calibration and electrical fault finding for ABI, Bauer, Liebherr and foundation fleets across the UAE.",
+    "Zaki Abbas Technical Services LLC in Dubai — PLC programming, HMI development, CANbus diagnostics, sensor calibration and electrical fault finding for ABI, Bauer, Liebherr and foundation fleets across the UAE.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "ZA Automation Dubai | Foundation Machinery Automation",
@@ -60,7 +60,7 @@ export default function HomePage() {
               Precision control for machines that <em>build the ground</em>
             </h1>
             <p className="hero__lead">
-              ZA Automation Technical Services LLC keeps ABI, Bauer, Liebherr
+              Zaki Abbas Technical Services LLC keeps ABI, Bauer, Liebherr
               and rotary fleets productive with specialist PLC, HMI, CANbus and
               electrical diagnostics — delivered on site from Dubai across the
               UAE.
@@ -215,7 +215,7 @@ export default function HomePage() {
               Dubai-based specialists for foundation fleets that cannot stop
             </h2>
             <p className="reveal reveal-d2">
-              ZA Automation Technical Services LLC delivers automation,
+              Zaki Abbas Technical Services LLC delivers automation,
               troubleshooting and control solutions for piling and foundation
               machinery. From our Dubai office in Al Barah, we support
               contractors across the UAE with disciplined field diagnostics.
@@ -654,7 +654,7 @@ export default function HomePage() {
               </div>
               <h2>Let’s restore uptime</h2>
               <p>
-                ZA Automation Technical Services LLC — specialist PLC, HMI,
+                Zaki Abbas Technical Services LLC — specialist PLC, HMI,
                 CANbus and electrical support for piling and foundation
                 machinery.
               </p>
