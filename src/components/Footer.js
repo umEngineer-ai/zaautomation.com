@@ -17,7 +17,7 @@ export default function Footer() {
             />
             <div className="logo__text">
               <strong>{site.shortName}</strong>
-              <small>Technical Services LLC</small>
+              <small>Zaki Abbas Technical Services LLC</small>
             </div>
           </div>
           <p>

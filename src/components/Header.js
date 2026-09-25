@@ -43,7 +43,7 @@ export default function Header({ solid = false }) {
           />
           <div className="logo__text">
             <strong>{site.shortName}</strong>
-            <small>Technical Services LLC</small>
+            <small>Zaki Abbas Technical Services LLC</small>
           </div>
         </Link>
 
