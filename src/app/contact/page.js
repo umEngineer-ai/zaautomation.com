@@ -8,7 +8,7 @@ import { site, waLink } from "@/lib/site";
 export const metadata = {
   title: { absolute: "Contact ZA Automation Dubai | WhatsApp +971 55 962 6398 | Al Barah" },
   description:
-    "Contact ZA Automation Technical Services LLC in Dubai: WhatsApp +971 55 962 6398, email zaki@zaautomation.com, Office F-201 Building 137 Al Barah. Request PLC, HMI, CANbus or electrical support.",
+    "Contact Zaki Abbas Technical Services LLC in Dubai: WhatsApp +971 55 962 6398, email zaki@zaautomation.com, Office F-201 Building 137 Al Barah. Request PLC, HMI, CANbus or electrical support.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact ZA Automation Dubai",
@@ -63,7 +63,7 @@ export default function ContactPage() {
             </div>
             <h2>Let’s restore uptime</h2>
             <p>
-              ZA Automation Technical Services LLC — specialist PLC, HMI, CANbus and electrical support
+              Zaki Abbas Technical Services LLC — specialist PLC, HMI, CANbus and electrical support
               for piling and foundation machinery.
             </p>
             <div className="contact__rows">
