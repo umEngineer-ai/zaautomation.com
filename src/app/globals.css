@@ -82,7 +82,7 @@ ul {
 }
 
 .container {
-  width: min(1280px, calc(100% - 96px));
+  width: min(1200px, calc(100% - 80px));
   margin-inline: auto;
 }
 
@@ -245,7 +245,7 @@ ul {
 
 .header__inner {
   height: 100%;
-  width: min(1280px, calc(100% - 96px));
+  width: min(1200px, calc(100% - 80px));
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -439,7 +439,7 @@ ul {
 .hero__content {
   position: relative;
   z-index: 5;
-  width: min(1280px, calc(100% - 96px));
+  width: min(1200px, calc(100% - 80px));
   margin: 0 auto;
   padding: 140px 0 80px;
   display: grid;
@@ -660,7 +660,7 @@ ul {
 }
 
 .marquee__label {
-  width: min(1280px, calc(100% - 96px));
+  width: min(1200px, calc(100% - 80px));
   margin: 0 auto 16px;
   font-family: var(--font);
   font-size: 11px;
@@ -1819,7 +1819,7 @@ ul {
 }
 
 .footer__grid {
-  width: min(1280px, calc(100% - 96px));
+  width: min(1200px, calc(100% - 80px));
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1.1fr;
@@ -1977,7 +1977,7 @@ ul {
 .page-hero__inner {
   position: relative;
   z-index: 5;
-  width: min(1280px, calc(100% - 96px));
+  width: min(1200px, calc(100% - 80px));
   margin: 0 auto;
   color: #fff;
 }
@@ -3723,542 +3723,35 @@ a.marquee__item:hover {
 
 /* Compact desktop layout: preserve the desktop information architecture
    without horizontal scrolling on narrow screens. */
+/* Compact viewports preserve the desktop information architecture. */
 @media (max-width: 900px) {
-  :root {
-    --header-h: 64px;
-  }
-
-  .container,
+  html { overflow-x: auto; }
+  body { min-width: 1280px; overflow-x: visible; }
+  .header { width: 1280px; }
   .header__inner,
+  .container,
   .hero__content,
   .marquee__label,
   .page-hero__inner,
   .footer__grid {
-    width: calc(100% - 32px);
-  }
-
-  .header__inner {
-    gap: 8px;
-  }
-  .logo {
-    gap: 7px;
-  }
-  .logo__img {
-    width: 36px;
-    height: 36px;
-    border-radius: 9px;
-    padding: 3px;
-  }
-  .logo__text strong {
-    font-size: 11px;
-  }
-  .logo__text small {
-    font-size: 7px;
-  }
-  .nav {
-    gap: 0;
-    min-width: 0;
-  }
-  .nav a {
-    padding: 7px 8px;
-    font-size: 9px;
-    white-space: nowrap;
-  }
-  .header__cta {
-    gap: 6px;
-  }
-  .header .btn--ghost {
-    display: none;
-  }
-  .header__cta .btn {
-    min-height: 34px;
-    padding-inline: 11px;
-    font-size: 9px;
-    white-space: nowrap;
-  }
-
-  .hero {
-    min-height: 590px;
-  }
-  .hero__content {
-    grid-template-columns: minmax(0, 1.15fr) minmax(170px, 0.85fr);
-    gap: 18px;
-    padding: 104px 0 46px;
-  }
-  .hero h1 {
-    font-size: clamp(34px, 6.4vw, 48px);
-    margin-bottom: 14px;
-  }
-  .hero__eyebrow {
-    margin-bottom: 14px;
-    padding: 6px 10px;
-    font-size: 8px;
-  }
-  .hero__lead {
-    font-size: 13px;
-    line-height: 1.6;
-    margin-bottom: 18px;
-  }
-  .hero__actions {
-    gap: 8px;
-    margin-bottom: 18px;
-  }
-  .btn {
-    min-height: 40px;
-    padding-inline: 16px;
-    font-size: 10px;
-    gap: 6px;
-  }
-  .hero__chips {
-    gap: 6px;
-  }
-  .hero__chips span {
-    padding: 7px 9px;
-    font-size: 8px;
-  }
-  .hero__panel {
-    border-radius: 14px;
-  }
-  .hero__panel-top {
-    padding: 11px;
-  }
-  .hero__panel-top strong {
-    font-size: 9px;
-  }
-  .hero__panel-top span {
-    padding: 4px 6px;
-    font-size: 7px;
-  }
-  .hero__panel-stats article {
-    padding: 10px 5px;
-  }
-  .hero__panel-stats strong {
-    font-size: 16px;
-  }
-  .hero__panel-stats span,
-  .hero__panel-list small {
-    font-size: 7px;
-  }
-  .hero__panel-list {
-    padding: 5px;
-    gap: 3px;
-  }
-  .hero__panel-list a {
-    padding: 8px;
-    gap: 6px;
-  }
-  .hero__panel-list b {
-    font-size: 9px;
-  }
-
-  .section {
-    padding: 62px 0;
-  }
-  .section__head {
-    gap: 16px;
-    margin-bottom: 30px;
-  }
-  .section__head h2,
-  .section-title {
-    font-size: 30px;
-  }
-  .section__head p,
-  .section-lead {
-    font-size: 13px;
-  }
-  .eyebrow {
-    font-size: 9px;
-    margin-bottom: 9px;
-  }
-  .about {
-    gap: 26px;
-  }
-  .about__visual,
-  .about__visual img {
-    min-height: 360px;
-  }
-  .about__copy h2 {
-    font-size: 30px;
-  }
-  .about__copy > p {
-    font-size: 13px;
-  }
-  .about__points {
-    margin: 18px 0 22px;
-    gap: 7px;
-  }
-  .about__points li {
-    padding: 10px 12px;
-    font-size: 11px;
-  }
-
-  .service-card {
-    min-height: 190px;
-    padding: 18px;
-    border-radius: 16px;
-  }
-  .bento {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-  }
-  .bento > .service-card--lg,
-  .bento > .service-card--sm,
-  .bento > .service-card--nested {
-    grid-column: span 1;
-  }
-  .bento > .service-card--md {
-    display: contents;
-  }
-  .service-card--lg,
-  .service-card--md,
-  .service-card--nested {
-    min-height: 190px;
-  }
-  .service-card h3 {
-    font-size: 17px;
-  }
-  .service-card p {
-    font-size: 11px;
-    margin-bottom: 12px;
-  }
-  .service-card__icon {
-    width: 38px;
-    height: 38px;
-    border-radius: 11px;
-    margin-bottom: 12px;
-  }
-  .service-card__num {
-    margin-bottom: 12px;
-    font-size: 9px;
-  }
-  .service-card__link {
-    font-size: 10px;
-  }
-  /* Preserve every desktop card grid at compact widths. */
-  .machine-grid,
-  .quotes,
-  .info-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .process-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .detail-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .proof {
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  }
-  .contact {
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  }
-  .cta-band {
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
-  }
-  .mach-detail,
-  .mach-detail:nth-child(even) {
-    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important;
-  }
-  .mach-detail:nth-child(even) .mach-detail__img {
-    order: 2 !important;
-  }
-  .mach-detail__body ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .machine-grid {
-    gap: 10px;
-  }
-  .machine-card {
-    min-height: 260px;
-    border-radius: 16px;
-  }
-  .machine-card__body {
-    left: 13px;
-    right: 13px;
-    bottom: 13px;
-  }
-  .machine-card h3 {
-    font-size: 17px;
-  }
-  .machine-card p {
-    font-size: 10px;
-  }
-  .machine-card__tag {
-    font-size: 8px;
-    padding: 5px 8px;
-    margin-bottom: 7px;
-  }
-  .process-grid,
-  .quotes,
-  .info-grid,
-  .detail-grid {
-    gap: 10px;
-  }
-  .process-card,
-  .quote-card,
-  .info-card {
-    border-radius: 16px;
-    padding: 18px;
-  }
-  .process-card__n {
-    font-size: 42px;
-    margin-bottom: 10px;
-  }
-  .process-card h3,
-  .info-card h3 {
-    font-size: 15px;
-  }
-  .process-card p,
-  .quote-card q,
-  .info-card p {
-    font-size: 11px;
-  }
-  .quote-card {
-    min-height: 220px;
-  }
-
-  .proof {
-    gap: 14px;
-  }
-  .proof__main,
-  .proof__main img {
-    min-height: 390px;
-    border-radius: 18px;
-  }
-  .proof__main-content {
-    padding: 24px;
-  }
-  .proof__main-content h3 {
-    font-size: 22px;
-  }
-  .proof__main-content p {
-    font-size: 12px;
-  }
-  .proof-card {
-    border-radius: 16px;
-    padding: 18px;
-  }
-  .proof-card strong {
-    font-size: 25px;
-  }
-  .proof-card h4 {
-    font-size: 13px;
-  }
-  .proof-card p {
-    font-size: 11px;
-  }
-  .cta-band {
-    padding: 38px;
-    border-radius: 20px;
-    gap: 18px;
-  }
-  .cta-band h2 {
-    font-size: 28px;
-  }
-  .cta-band p {
-    font-size: 12px;
-  }
-
-  .page-hero {
-    min-height: 390px;
-    padding: 118px 0 54px;
-  }
-  .page-hero--short {
-    min-height: 340px;
-  }
-  .page-hero h1 {
-    font-size: 38px;
-  }
-  .page-hero__lead {
-    font-size: 13px;
-  }
-  .page-hero__eyebrow,
-  .breadcrumb {
-    font-size: 9px;
-  }
-  .detail-card {
-    padding: 21px 18px;
-    border-radius: 16px;
-    gap: 10px;
-  }
-  .detail-card h2 {
-    font-size: 19px;
-  }
-  .detail-card > p,
-  .detail-card li {
-    font-size: 11px;
-  }
-  .contact {
-    gap: 12px;
-  }
-  .contact__info,
-  .contact__form {
-    border-radius: 18px;
-    padding: 24px 20px;
-  }
-  .contact__info h2 {
-    font-size: 25px;
-  }
-  .contact__row {
-    padding: 10px;
-    gap: 9px;
-    border-radius: 12px;
-  }
-  .contact__ico {
-    width: 31px;
-    height: 31px;
-    border-radius: 9px;
-  }
-  .contact__row a,
-  .contact__row span {
-    font-size: 11px;
-  }
-  .contact__form input,
-  .contact__form select,
-  .contact__form textarea {
-    padding: 10px 12px;
-    border-radius: 10px;
-    font-size: 11px;
-  }
-  .contact__form label span {
-    font-size: 9px;
-  }
-  .footer {
-    padding-top: 48px;
-  }
-  .footer__grid {
-    gap: 22px;
-    padding-bottom: 30px;
-  }
-  .footer h4 {
-    font-size: 9px;
-    margin-bottom: 10px;
-  }
-  .footer ul {
-    gap: 6px;
-  }
-  .footer ul a,
-  .footer__brand p {
-    font-size: 10px;
-  }
+    width: 1200px;
+    max-width: none;
+  }
+  .machine-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+  .machine-card { min-height: 380px; border-radius: 24px; }
+  .machine-card__body { left: 16px; right: 16px; bottom: 16px; padding: 16px 17px 15px; }
+  .machine-card h3 { font-size: clamp(20px, 1.8vw, 25px); }
+  .machine-card p { font-size: 14px; }
+  .machine-card__tag { font-size: 11px; padding: 7px 11px; margin-bottom: 10px; }
+  .process-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .detail-grid, .quotes, .info-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bento { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .mach-detail, .mach-detail:nth-child(even) { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important; }
 }
 
 @media (max-width: 560px) {
-  .container,
-  .header__inner,
-  .hero__content,
-  .marquee__label,
-  .page-hero__inner,
-  .footer__grid {
-    width: calc(100% - 20px);
-  }
-  .logo__text {
-    display: none;
-  }
-  .logo__img {
-    width: 31px;
-    height: 31px;
-  }
-  .nav a {
-    padding-inline: 5px;
-    font-size: 7px;
-  }
-  .header__cta .btn {
-    padding-inline: 8px;
-    font-size: 8px;
-  }
-  .hero {
-    min-height: 500px;
-  }
-  .hero__content {
-    grid-template-columns: minmax(0, 1.1fr) minmax(126px, 0.9fr);
-    gap: 10px;
-    padding-top: 90px;
-  }
-  .hero h1 {
-    font-size: 28px;
-  }
-  .hero__lead {
-    font-size: 10px;
-  }
-  .hero__panel-list {
-    display: none;
-  }
-  .hero__chips span {
-    font-size: 6px;
-    padding: 5px;
-  }
-  .section {
-    padding: 44px 0;
-  }
-  .section__head h2,
-  .section-title {
-    font-size: 23px;
-  }
-  .section__head p,
-  .section-lead {
-    font-size: 10px;
-  }
-  .service-card {
-    padding: 12px;
-    min-height: 150px;
-  }
-  .bento {
-    gap: 7px;
-  }
-  .service-card--lg,
-  .service-card--md,
-  .service-card--nested {
-    min-height: 150px;
-  }
-  .service-card h3 {
-    font-size: 13px;
-  }
-  .service-card p {
-    font-size: 9px;
-  }
-  .machine-card {
-    min-height: 190px;
-  }
-  .machine-card h3 {
-    font-size: 13px;
-  }
-  .machine-card p {
-    font-size: 8px;
-  }
-  .process-card,
-  .quote-card,
-  .info-card {
-    padding: 11px;
-  }
-  .process-card h3,
-  .info-card h3 {
-    font-size: 11px;
-  }
-  .process-card p,
-  .quote-card q,
-  .info-card p {
-    font-size: 8px;
-  }
-  .page-hero h1 {
-    font-size: 29px;
-  }
-  .contact__info,
-  .contact__form {
-    padding: 15px 12px;
-  }
-  .wa-float {
-    right: 12px;
-    bottom: 12px;
-    transform: scale(0.78);
-    transform-origin: bottom right;
-  }
-  .chatbot {
-    transform: scale(0.78);
-    transform-origin: bottom right;
-    right: 12px !important;
-    bottom: 64px !important;
-  }
+  /* Keep the same desktop-scale composition at phone widths. */
+  .header { width: 1280px; }
 }
 
 
@@ -4467,3 +3960,13 @@ a.marquee__item:hover {
   color: #f0b089 !important;
   -webkit-text-fill-color: #f0b089 !important;
 }
+
+
+/* Reveal state is applied after hydration without mutating individual nodes. */
+body.is-ready .mach-detail,
+body.is-ready .mach-detail.reveal,
+body.is-ready .mach-detail.reveal.is-in {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+body.is-ready .process-card__bar span { width: 100%; }
