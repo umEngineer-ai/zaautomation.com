@@ -197,30 +197,30 @@ export const machines = [
   },
   {
     id: "rotary",
-    image: assetPath("/assets/images/drilling-rig.jpeg"),
-    brand: "SANY / Rotary",
-    tag: "Drilling",
-    title: "Rotary Drilling Rigs",
+    image: assetPath("/assets/images/vibro-hammer.jpeg"),
+    brand: "RGT",
+    tag: "Vibro Hammers",
+    title: "RGT Vibro Hammers",
     description:
-      "PLC, HMI and electrical diagnostics for rotary foundation drilling fleets.",
+      "PLC, HMI and electrical diagnostics for RGT vibro hammer systems and foundation equipment.",
   },
   {
     id: "vibro",
-    image: assetPath("/assets/images/vibro-hammer.jpeg"),
-    brand: "Antares / Vibro",
-    tag: "Vibro",
-    title: "Vibro Hammers & Systems",
+    image: assetPath("/assets/images/crane.jpeg"),
+    brand: "Diaphragm",
+    tag: "Diaphragm",
+    title: "Diaphragm Grab Cutter",
     description:
-      "Automation and electrical support for vibro hammers, including Antares MR150 AVM class equipment.",
+      "Automation, control and electrical support for diaphragm grab cutter systems on foundation sites.",
   },
   {
     id: "liebherr",
-    image: assetPath("/assets/images/crane.jpeg"),
-    brand: "Liebherr",
-    tag: "Drilling",
-    title: "Liebherr Drilling Equipment",
+    image: assetPath("/assets/images/drilling-rig.jpeg"),
+    brand: "Piling",
+    tag: "Piling",
+    title: "Piling",
     description:
-      "Platform-specific control troubleshooting, harness and hydraulic-electrical support.",
+      "Platform-specific PLC, HMI, CANbus and hydraulic-electrical support for piling equipment.",
   },
 ];
 
