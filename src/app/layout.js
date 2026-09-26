@@ -10,13 +10,13 @@ export const metadata = {
   metadataBase: new URL(site.url),
   title: {
     default:
-      "ZA Automation Dubai | PLC, HMI & CANbus for Piling & Foundation Machinery",
-    template: "%s | ZA Automation Dubai",
+      "Zaki Abbas Dubai | PLC, HMI & CANbus for Piling & Foundation Machinery",
+    template: "%s | Zaki Abbas Dubai",
   },
   description:
     "Zaki Abbas Technical Services LLC in Dubai — PLC programming, HMI development, CANbus diagnostics, sensor calibration and electrical fault finding for foundation fleets across the UAE.",
   keywords: [
-    "ZA Automation Dubai",
+    "Zaki Abbas Dubai",
     "piling machinery automation UAE",
     "foundation equipment PLC",
     "CANbus diagnostics Dubai",

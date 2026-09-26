@@ -1,6 +1,6 @@
-# ZA Automation — Next.js Site
+# Zaki Abbas — Next.js Site
 
-Production-ready Next.js 15 (App Router) port of the ZA Automation website.
+Production-ready Next.js 15 (App Router) port of the Zaki Abbas website.
 
 ## Stack
 

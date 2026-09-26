@@ -32,7 +32,7 @@ export default function Header({ solid = false }) {
       id="header"
     >
       <div className="header__inner">
-        <Link className="logo" href="/" aria-label="ZA Automation home">
+        <Link className="logo" href="/" aria-label="Zaki Abbas home">
           <Image
             className="logo__img"
             src="/assets/images/logo.png"
@@ -65,7 +65,7 @@ export default function Header({ solid = false }) {
             href={waLink()}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="WhatsApp ZA Automation"
+            aria-label="WhatsApp Zaki Abbas"
           >
             WhatsApp
           </a>

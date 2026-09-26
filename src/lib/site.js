@@ -6,7 +6,7 @@ export function assetPath(path) {
 
 export const site = {
   name: "Zaki Abbas Technical Services LLC",
-  shortName: "ZA Automation",
+  shortName: "Zaki Abbas",
   url: "https://zaautomation.com",
   email: "zaki@zaautomation.com",
   phoneDisplay: "+971 55 962 6398",
@@ -249,7 +249,7 @@ export const testimonials = [
 ];
 
 export function waLink(
-  text = "Hello ZA Automation, I need automation support for my machinery.",
+  text = "Hello Zaki Abbas, I need automation support for my machinery.",
 ) {
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`;
 }

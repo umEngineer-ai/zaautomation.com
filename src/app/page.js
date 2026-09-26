@@ -9,13 +9,13 @@ import { machines, services, site, testimonials, waLink } from "@/lib/site";
 export const metadata = {
   title: {
     absolute:
-      "ZA Automation Dubai | PLC, HMI & CANbus for Piling & Foundation Machinery",
+      "Zaki Abbas Dubai | PLC, HMI & CANbus for Piling & Foundation Machinery",
   },
   description:
     "Zaki Abbas Technical Services LLC in Dubai — PLC programming, HMI development, CANbus diagnostics, sensor calibration and electrical fault finding for ABI, Bauer, Liebherr and foundation fleets across the UAE.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "ZA Automation Dubai | Foundation Machinery Automation",
+    title: "Zaki Abbas Dubai | Foundation Machinery Automation",
     description:
       "Specialist PLC, HMI, CANbus and electrical automation for piling and foundation machinery. On-site support across the UAE.",
     url: site.url,
@@ -210,7 +210,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="about__copy">
-            <div className="eyebrow reveal">About ZA Automation</div>
+            <div className="eyebrow reveal">About Zaki Abbas</div>
             <h2 className="reveal reveal-d1">
               Dubai-based specialists for foundation fleets that cannot stop
             </h2>
@@ -622,7 +622,7 @@ export default function HomePage() {
             primary={{ href: "/contact", label: "Request support" }}
             secondary={{
               href: waLink(
-                "Hello ZA Automation, I need urgent automation support.",
+                "Hello Zaki Abbas, I need urgent automation support.",
               ),
               label: "WhatsApp engineer",
               external: true,

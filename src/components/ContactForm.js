@@ -48,7 +48,7 @@ export default function ContactForm({ showService = false }) {
       {showService && <label><span>Service needed</span><select name="service" value={form.service} onChange={onChange}><option value="">Select service</option>{serviceOptions.map((opt)=><option key={opt.value} value={opt.value}>{opt.label}</option>)}</select></label>}
       <label><span>How can we help?</span><textarea name="message" rows={5} placeholder="Describe the fault, codes or service needed..." required value={form.message} onChange={onChange}/></label>
       <button className="btn btn--accent btn--block" type="submit" disabled={state.status === "loading"}>{state.status === "loading" ? "Sending..." : "Send Request"}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
-      {state.message ? <p className={state.status === "success" ? "form-note form-note--success" : "form-note form-note--error"} role="status">{state.message}</p> : <p className="form-note">Your request is securely submitted to ZA Automation. For urgent support use WhatsApp {site.phoneDisplay}.</p>}
+      {state.message ? <p className={state.status === "success" ? "form-note form-note--success" : "form-note form-note--error"} role="status">{state.message}</p> : <p className="form-note">Your request is securely submitted to Zaki Abbas. For urgent support use WhatsApp {site.phoneDisplay}.</p>}
     </form>
   );
 }

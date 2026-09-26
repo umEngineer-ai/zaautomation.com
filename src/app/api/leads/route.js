@@ -7,7 +7,7 @@ const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const NOTIFICATION_EMAIL =
   process.env.LEAD_NOTIFICATION_EMAIL || "zaki@zaautomation.com";
 const FROM_EMAIL =
-  process.env.RESEND_FROM_EMAIL || "ZA Automation <noreply@zaautomation.com>";
+  process.env.RESEND_FROM_EMAIL || "Zaki Abbas <noreply@zaautomation.com>";
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

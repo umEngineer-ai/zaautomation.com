@@ -102,14 +102,14 @@ export default function ChatBot() {
   return (
     <div className={`chatbot${open ? " is-open" : ""}`}>
       {open && (
-        <section className="chatbot__panel" aria-label="ZA Automation chat assistant">
+        <section className="chatbot__panel" aria-label="Zaki Abbas chat assistant">
           <header className="chatbot__head">
             <div className="chatbot__identity">
               <div className="chatbot__avatar" aria-hidden="true">
                 ZA
               </div>
               <div>
-                <strong>ZA Assistant</strong>
+                <strong>Zaki Assistant</strong>
                 <span>
                   <i className="chatbot__dot" aria-hidden="true" /> Online · typically replies instantly
                 </span>
@@ -183,7 +183,7 @@ export default function ChatBot() {
               <div
                 className="chatbot__bubble chatbot__bubble--bot chatbot__typing"
                 role="status"
-                aria-label="ZA Assistant is typing"
+                aria-label="Zaki Assistant is typing"
               >
                 <span />
                 <span />
@@ -233,7 +233,7 @@ export default function ChatBot() {
 
           <footer className="chatbot__foot">
             <a
-              href={waLink("Hello ZA Automation, I need to speak with an engineer.")}
+              href={waLink("Hello Zaki Abbas, I need to speak with an engineer.")}
               target="_blank"
               rel="noopener noreferrer"
             >

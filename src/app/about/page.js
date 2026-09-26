@@ -8,13 +8,13 @@ import { assetPath, site, waLink } from "@/lib/site";
 export const metadata = {
   title: {
     absolute:
-      "About ZA Automation Dubai | Foundation Machinery Automation Specialists",
+      "About Zaki Abbas Dubai | Foundation Machinery Automation Specialists",
   },
   description:
     "Learn about Zaki Abbas Technical Services LLC in Al Barah, Dubai — specialists in PLC, HMI, CANbus and electrical automation for piling and foundation machinery across the UAE.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About ZA Automation Dubai",
+    title: "About Zaki Abbas Dubai",
     description:
       "Dubai-based specialists keeping foundation fleets online with PLC, HMI, CANbus and electrical diagnostics.",
     url: `${site.url}/about`,
@@ -47,7 +47,7 @@ export default function AboutPage() {
       <JsonLd data={schema} />
       <PageHero
         image={assetPath("/assets/images/abi-mobilram.jpg")}
-        alt="ZA Automation field work on rotary drilling equipment"
+        alt="Zaki Abbas field work on rotary drilling equipment"
         eyebrow="About the company"
         title="Dubai specialists keeping foundation fleets online"
         lead="Zaki Abbas Technical Services LLC delivers disciplined automation, diagnostics and control solutions for piling and foundation machinery across the UAE."
@@ -60,7 +60,7 @@ export default function AboutPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={assetPath("/assets/images/abi-tm22-site.jpg")}
-              alt="ABI piling machine supported by ZA Automation in Dubai"
+              alt="ABI piling machine supported by Zaki Abbas in Dubai"
             />
             <div className="about__float">
               <article>
@@ -79,7 +79,7 @@ export default function AboutPage() {
               Engineering partners for contractors who cannot afford downtime
             </h2>
             <p className="reveal reveal-d2">
-              Based in Al Barah, Dubai, ZA Automation supports foundation
+              Based in Al Barah, Dubai, Zaki Abbas supports foundation
               contractors with PLC programming, HMI development, CANbus
               troubleshooting, sensor calibration, LMI work and electrical fault
               finding.

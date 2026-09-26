@@ -6,12 +6,12 @@ import JsonLd from "@/components/JsonLd";
 import { site, waLink } from "@/lib/site";
 
 export const metadata = {
-  title: { absolute: "Contact ZA Automation Dubai | WhatsApp +971 55 962 6398 | Al Barah" },
+  title: { absolute: "Contact Zaki Abbas Dubai | WhatsApp +971 55 962 6398 | Al Barah" },
   description:
     "Contact Zaki Abbas Technical Services LLC in Dubai: WhatsApp +971 55 962 6398, email zaki@zaautomation.com, Office F-201 Building 137 Al Barah. Request PLC, HMI, CANbus or electrical support.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact ZA Automation Dubai",
+    title: "Contact Zaki Abbas Dubai",
     description:
       "WhatsApp +971 55 962 6398 · zaki@zaautomation.com · Office F-201, Building No. 137, Al Barah, Dubai.",
     url: `${site.url}/contact`,
@@ -22,7 +22,7 @@ export default function ContactPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    name: "Contact ZA Automation",
+    name: "Contact Zaki Abbas",
     url: `${site.url}/contact`,
     mainEntity: {
       "@type": "LocalBusiness",
@@ -45,7 +45,7 @@ export default function ContactPage() {
       <PageHero
         short
         image="/assets/images/abi-tm22-site.jpg"
-        alt="Contact ZA Automation for foundation machinery support in Dubai"
+        alt="Contact Zaki Abbas for foundation machinery support in Dubai"
         eyebrow="Contact"
         title="Request automation support"
         lead={`WhatsApp ${site.phoneDisplay} · ${site.email} · Al Barah, Dubai`}

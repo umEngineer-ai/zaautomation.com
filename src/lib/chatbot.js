@@ -52,7 +52,7 @@ const knowledge = [
   },
   {
     keys: ["contact", "phone", "whatsapp", "email", "call", "number", "reach"],
-    answer: `Contact ZA Automation:\n\n📞 / WhatsApp: ${site.phoneDisplay}\n✉️ ${site.email}\n📍 ${site.address.line1}, ${site.address.city}\n\nI can also open WhatsApp with your question pre-filled.`,
+    answer: `Contact Zaki Abbas:\n\n📞 / WhatsApp: ${site.phoneDisplay}\n✉️ ${site.email}\n📍 ${site.address.line1}, ${site.address.city}\n\nI can also open WhatsApp with your question pre-filled.`,
   },
   {
     keys: ["emergency support", "emergency", "urgent", "down", "breakdown", "stopped", "offline", "asap", "now"],
@@ -63,7 +63,7 @@ const knowledge = [
     answer: `We support foundation sites across the UAE. For urgent breakdowns, message WhatsApp anytime and we’ll respond as soon as possible during active field coverage.\n\nWhatsApp: ${site.phoneDisplay}`,
   },
   {
-    keys: ["about", "company", "who are you", "za automation"],
+    keys: ["about", "company", "who are you", "zaki abbas"],
     answer: `${site.name} specializes in automation, troubleshooting and control solutions for piling and foundation machinery from Dubai (Al Barah), serving contractors UAE-wide.\n\nStats: ${site.stats.projects} projects · ${site.stats.installs} major installations · ${site.stats.coverage} coverage.`,
   },
   {
@@ -103,7 +103,7 @@ export function getBotReply(input) {
           type: "whatsapp",
           label: "Chat on WhatsApp",
           href: waLink(
-            "Hello ZA Automation, I was chatting on the website and need to speak with an engineer."
+            "Hello Zaki Abbas, I was chatting on the website and need to speak with an engineer."
           ),
         },
       ],
@@ -129,7 +129,7 @@ export function getBotReply(input) {
             : text.includes("price") || text.includes("quote")
             ? "Get a Quote on WhatsApp"
             : "Continue on WhatsApp",
-          href: waLink(`Hello ZA Automation,\n\nWebsite chat question: ${input}`),
+          href: waLink(`Hello Zaki Abbas,\n\nWebsite chat question: ${input}`),
         });
       }
       if (text.includes("service") || item.keys.includes("services")) {
@@ -162,7 +162,7 @@ export function getBotReply(input) {
       {
         type: "whatsapp",
         label: "Talk to engineer",
-        href: waLink(`Hello ZA Automation,\n\nWebsite chat question: ${input}`),
+        href: waLink(`Hello Zaki Abbas,\n\nWebsite chat question: ${input}`),
       },
       { type: "link", label: "Contact page", href: "/contact" },
     ],
@@ -171,6 +171,6 @@ export function getBotReply(input) {
 
 export const welcomeMessage = {
   from: "bot",
-  text: `Hi — I’m the ZA Automation assistant.\n\nI can help with services, supported machinery, quotes, and Dubai contact details. For urgent breakdowns, I can connect you to an engineer on WhatsApp.`,
+  text: `Hi — I’m the Zaki Abbas assistant.\n\nI can help with services, supported machinery, quotes, and Dubai contact details. For urgent breakdowns, I can connect you to an engineer on WhatsApp.`,
   actions: [],
 };

@@ -8,15 +8,15 @@ import { assetPath, machines, site } from "@/lib/site";
 export const metadata = {
   title: {
     absolute:
-      "Machinery We Support | ABI, Bauer, Liebherr, SANY | ZA Automation Dubai",
+      "Machinery We Support | ABI, Bauer, Liebherr, SANY | Zaki Abbas Dubai",
   },
   description:
-    "ZA Automation supports ABI sheet pile machines, rotary drilling rigs, Bauer systems, Liebherr equipment, vibro hammers and foundation plant with PLC, HMI, CANbus and electrical automation across the UAE.",
+    "Zaki Abbas supports ABI sheet pile machines, rotary drilling rigs, Bauer systems, Liebherr equipment, vibro hammers and foundation plant with PLC, HMI, CANbus and electrical automation across the UAE.",
   alternates: { canonical: "/machinery" },
   openGraph: {
-    title: "Machinery We Support | ZA Automation Dubai",
+    title: "Machinery We Support | Zaki Abbas Dubai",
     description:
-      "Foundation and piling machinery platforms supported by ZA Automation in Dubai and across the UAE.",
+      "Foundation and piling machinery platforms supported by Zaki Abbas in Dubai and across the UAE.",
     url: `${site.url}/machinery`,
   },
 };
@@ -25,10 +25,10 @@ export default function MachineryPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Machinery We Support | ZA Automation",
+    name: "Machinery We Support | Zaki Abbas",
     url: `${site.url}/machinery`,
     description:
-      "Foundation and piling machinery platforms supported by ZA Automation in Dubai and across the UAE.",
+      "Foundation and piling machinery platforms supported by Zaki Abbas in Dubai and across the UAE.",
   };
 
   return (
@@ -36,7 +36,7 @@ export default function MachineryPage() {
       <JsonLd data={schema} />
       <PageHero
         image={assetPath("/assets/images/abi-mobilram.jpg")}
-        alt="Bauer foundation machinery supported by ZA Automation"
+        alt="Bauer foundation machinery supported by Zaki Abbas"
         eyebrow="Platforms"
         title="Machinery we support across UAE foundation sites"
         lead="Hands-on automation experience with the heavy plant behind piling, drilling and foundation works."

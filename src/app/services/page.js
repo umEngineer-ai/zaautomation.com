@@ -6,12 +6,12 @@ import JsonLd from "@/components/JsonLd";
 import { services, site, waLink } from "@/lib/site";
 
 export const metadata = {
-  title: { absolute: "Automation Services Dubai | PLC, HMI, CANbus, LMI & Electrical | ZA Automation" },
+  title: { absolute: "Automation Services Dubai | PLC, HMI, CANbus, LMI & Electrical | Zaki Abbas" },
   description:
-    "ZA Automation services in Dubai: PLC programming, HMI development, CANbus troubleshooting, sensor calibration, electrical fault finding, LMI calibration and control panel support for foundation machinery UAE.",
+    "Zaki Abbas services in Dubai: PLC programming, HMI development, CANbus troubleshooting, sensor calibration, electrical fault finding, LMI calibration and control panel support for foundation machinery UAE.",
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Automation Services Dubai | ZA Automation",
+    title: "Automation Services Dubai | Zaki Abbas",
     description:
       "PLC, HMI, CANbus, LMI and electrical automation services for piling and foundation machinery across the UAE.",
     url: `${site.url}/services`,
@@ -22,7 +22,7 @@ export default function ServicesPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Automation Services | ZA Automation Dubai",
+    name: "Automation Services | Zaki Abbas Dubai",
     url: `${site.url}/services`,
     about: {
       "@type": "ItemList",
