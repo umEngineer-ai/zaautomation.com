@@ -12,7 +12,7 @@ export default function DesktopScale() {
       const navbar = document.getElementById("desktop-navbar");
       if (!root || !navbar) return;
 
-      const scale = Math.min(window.innerWidth / DESIGN_WIDTH, 1);
+      const scale = window.innerWidth / DESIGN_WIDTH;
 
       [root, navbar].forEach((element) => {
         element.style.width = DESIGN_WIDTH + "px";
