@@ -4007,3 +4007,28 @@ body {
   -webkit-text-fill-color: var(--ink) !important;
   border-color: var(--line) !important;
 }
+
+
+/* Homepage navbar: keep text readable over the light hero/header area. */
+.header.home-header:not(.is-scrolled) .logo__text strong {
+  color: var(--ink);
+}
+
+.header.home-header:not(.is-scrolled) .logo__text small {
+  color: var(--muted);
+}
+
+.header.home-header:not(.is-scrolled) .nav a {
+  color: var(--ink);
+}
+
+.header.home-header:not(.is-scrolled) .nav a:hover,
+.header.home-header:not(.is-scrolled) .nav a.is-active {
+  color: var(--accent);
+  background: var(--sand);
+}
+
+.header.home-header:not(.is-scrolled) .btn--ghost {
+  --btn-color: var(--ink);
+  --btn-border: var(--line);
+}
