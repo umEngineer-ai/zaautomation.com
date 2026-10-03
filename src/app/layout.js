@@ -1,4 +1,5 @@
 import "./globals.css";
+import DesktopScale from "@/components/DesktopScale";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import ChatBot from "@/components/ChatBot";
 import RevealInit from "@/components/RevealInit";
@@ -42,11 +43,8 @@ export const metadata = {
 };
 
 export const viewport = {
-  width: 1280,
+  width: "device-width",
   initialScale: 1,
-  minimumScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 };
 
 export default function RootLayout({ children }) {
@@ -54,6 +52,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <JsonLd data={localBusinessJsonLd()} />
+        <DesktopScale />
         {children}
         <WhatsAppFloat />
         <ChatBot />
