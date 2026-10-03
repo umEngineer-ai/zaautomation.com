@@ -3967,3 +3967,43 @@ body {
   min-width: 0;
   overflow-x: hidden;
 }
+
+
+/* ===== NAVBAR TEXT VISIBILITY FIX =====
+   The fixed desktop canvas is scaled independently on narrow viewports.
+   Keep the scrolled/light navbar text explicitly dark so it cannot inherit
+   the hero's white text rules. */
+#desktop-navbar .header.is-scrolled .logo__text strong {
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+}
+
+#desktop-navbar .header.is-scrolled .logo__text small {
+  color: var(--muted) !important;
+  -webkit-text-fill-color: var(--muted) !important;
+}
+
+#desktop-navbar .header.is-scrolled .nav a,
+#desktop-navbar .header.is-scrolled .nav a:visited {
+  color: var(--muted) !important;
+  -webkit-text-fill-color: var(--muted) !important;
+}
+
+#desktop-navbar .header.is-scrolled .nav a:hover,
+#desktop-navbar .header.is-scrolled .nav a.is-active {
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+  background: var(--sand) !important;
+}
+
+#desktop-navbar .header.is-scrolled .nav a.is-active {
+  color: var(--accent) !important;
+  -webkit-text-fill-color: var(--accent) !important;
+}
+
+#desktop-navbar .header.is-scrolled .header__cta .btn--ghost {
+  --btn-color: var(--ink) !important;
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
