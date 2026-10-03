@@ -4,9 +4,13 @@ import Footer from "@/components/Footer";
 export default function SiteChrome({ children, solid = false }) {
   return (
     <>
-      <Header solid={solid} />
-      <main>{children}</main>
-      <Footer />
+      <div id="desktop-navbar">
+        <Header solid={solid} />
+      </div>
+      <div id="desktop-root">
+        <main>{children}</main>
+        <Footer />
+      </div>
     </>
   );
 }
