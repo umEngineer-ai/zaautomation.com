@@ -28,7 +28,7 @@ export default function Header({ solid = false }) {
 
   return (
     <header
-      className={`header${solid ? " header--solid" : ""}${scrolled ? " is-scrolled" : ""}`}
+      className={`header${solid ? " header--solid" : ""}${pathname === "/" ? " home-header" : ""}${scrolled ? " is-scrolled" : ""}`}
       id="header"
     >
       <div className="header__inner">
