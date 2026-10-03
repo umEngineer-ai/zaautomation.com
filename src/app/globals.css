@@ -3724,35 +3724,7 @@ a.marquee__item:hover {
 /* Compact desktop layout: preserve the desktop information architecture
    without horizontal scrolling on narrow screens. */
 /* Compact viewports preserve the desktop information architecture. */
-@media (max-width: 900px) {
-  html { overflow-x: auto; }
-  body { min-width: 1280px; overflow-x: visible; }
-  .header { width: 1280px; }
-  .header__inner,
-  .container,
-  .hero__content,
-  .marquee__label,
-  .page-hero__inner,
-  .footer__grid {
-    width: 1200px;
-    max-width: none;
-  }
-  .machine-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-  .machine-card { min-height: 380px; border-radius: 24px; }
-  .machine-card__body { left: 16px; right: 16px; bottom: 16px; padding: 16px 17px 15px; }
-  .machine-card h3 { font-size: clamp(20px, 1.8vw, 25px); }
-  .machine-card p { font-size: 14px; }
-  .machine-card__tag { font-size: 11px; padding: 7px 11px; margin-bottom: 10px; }
-  .process-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
-  .detail-grid, .quotes, .info-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .bento { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .mach-detail, .mach-detail:nth-child(even) { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important; }
-}
-
-@media (max-width: 560px) {
-  /* Keep the same desktop-scale composition at phone widths. */
-  .header { width: 1280px; }
-}
+/* Mobile keeps the same desktop canvas; DesktopScale handles visual scaling. */
 
 
 /* ===== HOMEPAGE MACHINERY CARDS — PREMIUM POLISH ===== */
@@ -3970,3 +3942,28 @@ body.is-ready .mach-detail.reveal.is-in {
   transform: translate3d(0, 0, 0) !important;
 }
 body.is-ready .process-card__bar span { width: 100%; }
+
+
+/* ===== FIXED DESKTOP CANVAS — SAME MOBILE BEHAVIOR AS REFERENCE ===== */
+#desktop-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  width: 100%;
+}
+
+#desktop-root {
+  position: relative;
+  width: 1440px;
+  transform-origin: top left;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
